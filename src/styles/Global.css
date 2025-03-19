@@ -1,0 +1,386 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+    font-family: "NanumBrushScript";
+    src:
+        url("/fonts/Cafe24Shiningstar.woff2") format("woff2"),
+        url("/fonts/Cafe24Shiningstar.woff") format("woff"),
+        url("/fonts/Nanum-Brush-Script-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BodoniModa";
+    src:
+        url("/fonts/BodoniModa.woff2") format("woff2"),
+        url("/fonts/BodoniModa.woff") format("woff"),
+        url("/fonts/BodoniModa.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cafe24Shiningstar";
+    src:
+        url("/fonts/Cafe24Shiningstar-v2.0.woff2") format("woff2"),
+        url("/fonts/Cafe24Shiningstar-v2.0.woff") format("woff"),
+        url("/fonts/Cafe24Shiningstar-v2.0.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapoPeacefull";
+    src:
+        url("/fonts/MapoPeacefull.woff2") format("woff2"),
+        url("/fonts/MapoPeacefull.woff") format("woff"),
+        url("/fonts/MapoPeacefull.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GimpoBatang00";
+    src:
+        url("/fonts/GimpoBatang00.woff2") format("woff2"),
+        url("/fonts/GimpoBatang00.woff") format("woff"),
+        url("/fonts/GimpoBatang00.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GowunBatang-Regular";
+    src:
+        url("/fonts/GowunBatang-Regular.woff2") format("woff2"),
+        url("/fonts/GowunBatang-Regular.woff") format("woff"),
+        url("/fonts/GowunBatang-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: light !important;
+    }
+}
+
+html {
+    touch-action: manipulation; /* 더블탭 확대 방지 */
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* 전체 스크롤바 숨기기 */
+    -ms-overflow-style: none; /* IE와 Edge를 위한 설정 */
+    scrollbar-width: none; /* Firefox를 위한 설정 */
+    touch-action: pan-x pan-y; /* 핀치 줌만 비활성화하고 스크롤은 허용 */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.swiper-slide {
+    z-index: auto !important;
+}
+.swiper-slide-active {
+    z-index: 1 !important;
+}
+/* 스크롤바 숨기기 */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.stars {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.star-1,
+.star-2,
+.star-3,
+.star-4,
+.star-5,
+.star-6,
+.star-7 {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
+    clip-path: polygon(
+        50% 0%,
+        /* 상단 꼭지점 */ 42% 42%,
+        /* 우상단 안쪽 - 더 안쪽으로 */ 0% 50%,
+        /* 좌측 꼭지점 */ 42% 58%,
+        /* 좌하단 안쪽 - 더 안쪽으로 */ 50% 100%,
+        /* 하단 꼭지점 */ 58% 58%,
+        /* 우하단 안쪽 - 더 안쪽으로 */ 100% 50%,
+        /* 우측 꼭지점 */ 58% 42% /* 우상단 안쪽 - 더 안쪽으로 */
+    );
+    animation: twinkle 2s infinite;
+}
+.star-1 {
+    top: 5%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.star-2 {
+    top: 10%;
+    right: 20%;
+    animation-delay: 0.3s;
+}
+
+.star-3 {
+    top: 15%;
+    right: 35%;
+    animation-delay: 0.6s;
+}
+
+.star-4 {
+    top: 17%;
+    left: 30%;
+    animation-delay: 0.9s;
+}
+
+.star-5 {
+    top: 7%;
+    right: 45%;
+    animation-delay: 1.2s;
+}
+
+.star-6 {
+    top: 13%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+.star-7 {
+    top: 1%;
+    left: 40%;
+    animation-delay: 1.8s;
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.sparkle-1,
+.sparkle-2,
+.sparkle-3,
+.sparkle-4,
+.sparkle-5,
+.sparkle-6,
+.sparkle-7,
+.sparkle-8 {
+    position: absolute;
+    width: 4.5px; /* 크기 증가 */
+    height: 4.5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6));
+}
+
+.sparkle-1 {
+    top: 5%;
+    left: 25%;
+    animation: float-1 8s ease-in-out infinite; /* 5s → 8s */
+}
+
+.sparkle-2 {
+    top: 7%;
+    right: 30%;
+    animation: float-2 9s ease-in-out infinite; /* 6s → 9s */
+}
+
+.sparkle-3 {
+    top: 10%;
+    left: 45%;
+    animation: float-3 8.5s ease-in-out infinite; /* 5.5s → 8.5s */
+}
+
+.sparkle-4 {
+    top: 13%;
+    right: 25%;
+    animation: float-4 9.5s ease-in-out infinite; /* 6.5s → 9.5s */
+}
+
+.sparkle-5 {
+    top: 15%;
+    left: 35%;
+    animation: float-5 8.8s ease-in-out infinite; /* 5.8s → 8.8s */
+}
+
+.sparkle-6 {
+    top: 17%;
+    right: 40%;
+    animation: float-6 8.2s ease-in-out infinite; /* 5.2s → 8.2s */
+}
+
+.sparkle-7 {
+    top: 20%;
+    right: 35%;
+    animation: float-7 9.2s ease-in-out infinite; /* 6.2s → 9.2s */
+}
+
+.sparkle-8 {
+    top: 3%;
+    left: 38%;
+    animation: float-8 8.7s ease-in-out infinite; /* 5.7s → 8.7s */
+}
+
+.swiper-scrollbar {
+    height: 3px !important;
+    background-color: #e6e6e6 !important; /* 스크롤바 트랙 색상 */
+}
+
+.swiper-scrollbar-drag {
+    background-color: #999999 !important; /* 스크롤바 드래그 색상 */
+}
+
+@keyframes float-1 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(10px, -8px);
+    }
+    50% {
+        transform: translate(-7px, 10px);
+    }
+    75% {
+        transform: translate(-9px, -7px);
+    }
+}
+
+@keyframes float-2 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    33% {
+        transform: translate(-12px, 8px);
+    }
+    66% {
+        transform: translate(9px, -10px);
+    }
+}
+
+@keyframes float-3 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(8px, 8px);
+    }
+    40% {
+        transform: translate(-10px, -9px);
+    }
+    60% {
+        transform: translate(-8px, 10px);
+    }
+    80% {
+        transform: translate(9px, -8px);
+    }
+}
+
+@keyframes float-4 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    30% {
+        transform: translate(-9px, -10px);
+    }
+    60% {
+        transform: translate(12px, 8px);
+    }
+}
+
+@keyframes float-5 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-10px, 9px);
+    }
+    50% {
+        transform: translate(11px, -8px);
+    }
+    75% {
+        transform: translate(8px, 10px);
+    }
+}
+
+@keyframes float-6 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    30% {
+        transform: translate(11px, -10px);
+    }
+    60% {
+        transform: translate(-9px, 12px);
+    }
+}
+
+@keyframes float-7 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-11px, -9px);
+    }
+    50% {
+        transform: translate(10px, 8px);
+    }
+    75% {
+        transform: translate(9px, -11px);
+    }
+}
+
+@keyframes float-8 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(12px, 10px);
+    }
+    40% {
+        transform: translate(-8px, -11px);
+    }
+    60% {
+        transform: translate(-10px, 9px);
+    }
+    80% {
+        transform: translate(11px, -10px);
+    }
+}

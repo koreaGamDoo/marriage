@@ -1,0 +1,26 @@
+-- 참가자 테이블
+CREATE TABLE participant (
+    no           SERIAL PRIMARY KEY,             -- 자동 증가 번호 (Primary Key)
+    relationship VARCHAR(100) NOT NULL CHECK (relationship <> ''), -- 관계 (빈 문자열 불가)
+    attend       BOOLEAN NOT NULL,               -- 참석 여부 (true/false, 필수 입력값)
+    name         VARCHAR(100) NOT NULL CHECK (name <> ''),         -- 이름 (빈 문자열 불가)
+    phone        VARCHAR(100) NOT NULL CHECK (phone <> ''),        -- 전화번호 (빈 문자열 불가)
+    companion    VARCHAR(100) NOT NULL CHECK (companion <> ''),    -- 동반자 (빈 문자열 불가)
+    dinner       BOOLEAN NOT NULL,               -- 저녁 참석 여부 (true/false, 필수 입력값)
+    additional   VARCHAR(2000),                  -- 추가 정보 (선택 입력값)
+    agree        BOOLEAN NOT NULL                -- 동의 여부 (true/false, 필수 입력값)
+);
+
+-- 방명록 테이블
+CREATE TABLE guestbook (
+    no           SERIAL PRIMARY KEY,             -- 자동 증가 번호 (Primary Key)
+    name         VARCHAR(100) NOT NULL CHECK (name <> ''), -- 이름 (빈 문자열 불가)
+    content      TEXT NOT NULL CHECK (content <> ''),      -- 내용 (빈 문자열 불가)
+    pw           VARCHAR(100) NOT NULL CHECK (pw <> ''),   -- 비밀번호 (빈 문자열 불가)
+    created      VARCHAR(100) NOT NULL,                     -- 작성일 (필수 입력값)
+    target       INTEGER NULL,                                -- 댓글 달 방명록 번호
+);
+
+
+-- TRUNCATE TABLE participant RESTART IDENTITY;
+-- TRUNCATE TABLE guestbook RESTART IDENTITY;

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "NanumBrushScript";
+    src:
+        url("Nanum-Brush-Script-Regular.woff2") format("woff2"),
+        url("Nanum-Brush-Script-Regular.woff") format("woff"),
+        url("Nanum-Brush-Script-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BodoniModa";
+    src:
+        url("/fonts/BodoniModa.woff2") format("woff2"),
+        url("/fonts/BodoniModa.woff") format("woff"),
+        url("/fonts/BodoniModa.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cafe24Shiningstar";
+    src:
+        url("/fonts/Cafe24Shiningstar-v2.0.woff2") format("woff2"),
+        url("/fonts/Cafe24Shiningstar-v2.0.woff") format("woff"),
+        url("/fonts/Cafe24Shiningstar-v2.0.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapoPeacefull";
+    src:
+        url("/fonts/MapoPeacefull.woff2") format("woff2"),
+        url("/fonts/MapoPeacefull.woff") format("woff"),
+        url("/fonts/MapoPeacefull.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GimpoBatang00";
+    src:
+        url("/fonts/GimpoBatang00.woff2") format("woff2"),
+        url("/fonts/GimpoBatang00.woff") format("woff"),
+        url("/fonts/GimpoBatang00.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GowunBatang-Regular";
+    src:
+        url("/fonts/GowunBatang-Regular.woff2") format("woff2"),
+        url("/fonts/GowunBatang-Regular.woff") format("woff"),
+        url("/fonts/GowunBatang-Regular.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
