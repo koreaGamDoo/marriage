@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         images: [
             {
                 // url: "https://github.com/parkjoohan/gjh_marriage/blob/master/public/images/metaImage.png?raw=true",
-                url: "https://github.com/parkjoohan/gjh_marriage/blob/master/public/images/metaImage2.jpg?raw=true",
+                url: "https://github.com/koreaGamDoo/marriage/blob/master/metaImage2.jpg?raw=true",
                 width: 1200,
                 height: 1800,
             },

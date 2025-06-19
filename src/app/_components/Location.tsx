@@ -34,7 +34,7 @@ function Location() {
 
     return (
         <>
-            <div className="gsap-div flex h-[1300px] w-full flex-col items-center break-keep bg-[#ffffff] pt-10">
+            <div className="gsap-div flex h-[1400px] w-full flex-col items-center break-keep bg-[#ffffff] pt-10">
                 <motion.div
                     ref={ref1}
                     initial="hidden"
@@ -264,15 +264,46 @@ function Location() {
                         <div className="gsap-opacity flex items-center py-2">
                             <h3 className="font-bold text-[#EEBCBC]">주차</h3>
                         </div>
-                        <div className="gsap-opacity py-4">
-                            <p>건물 주차장 또는 주차요원 안내 / 2시간 무료</p>
+                        <div className="gsap-opacity pb-1 pt-4">
+                            <p>2시간 무료주차</p>
                             <p
                                 style={{
                                     fontStyle: "oblique",
                                     textDecoration: "underline",
+                                    fontSize: "12px",
                                 }}
                             >
-                                <strong>* 이후 추가요금 발생</strong>
+                                <strong>
+                                    * 접수대에서 주차권 배부 2시간이후 30분당
+                                    1,500원
+                                </strong>
+                            </p>
+                        </div>
+                        <div className="gsap-opacity pb-4 pt-2">
+                            <p>컨벤션센터 주차장 만차 시전쟁기념관에 주차</p>
+                            <p
+                                style={{
+                                    fontStyle: "oblique",
+                                    textDecoration: "underline",
+                                    fontSize: "12px",
+                                }}
+                            >
+                                <strong>
+                                    * 주차 후컨벤션 안내데스크에서 차량번호 등록
+                                    시 2시간 무료 정산
+                                </strong>
+                            </p>
+                            <p
+                                style={{
+                                    fontStyle: "oblique",
+                                    textDecoration: "underline",
+                                    fontSize: "12px",
+                                }}
+                            >
+                                <strong>
+                                    * 만차되지 않은 상태에서 전쟁기념관 주차 시
+                                    할인 적용 불가
+                                </strong>
                             </p>
                         </div>
                     </motion.div>
