@@ -72,47 +72,6 @@ function Footer() {
         <>
             <div className="participantInfo overflow-hidden bg-[#f9eaec]">
                 <div className="gsap-div flex h-full min-h-96 flex-col items-center justify-center px-4 py-12">
-                    <motion.div
-                        ref={ref1}
-                        initial="hidden"
-                        animate={animation1}
-                        className="introduce-title"
-                    >
-                        <div className="gsap-opacity mb-8 flex justify-center">
-                            <p className="gsap-opacity px-4 font-['Cafe24Shiningstar'] text-[13vw] tracking-wider sm:text-[60px]">
-                                포토부스
-                            </p>
-                        </div>
-                    </motion.div>
-                    <motion.div
-                        ref={ref2}
-                        initial="hidden"
-                        animate={animation2}
-                        className="mb-3"
-                    >
-                        <Image
-                            src="/images/camera.gif"
-                            alt="카메라 애니메이션"
-                            width={200}
-                            height={200}
-                        />
-                    </motion.div>
-                    <div className="participant-contents mx-auto flex h-[100px] w-[90%] flex-col items-center justify-evenly">
-                        <motion.p
-                            ref={ref3}
-                            initial="hidden"
-                            animate={animation3}
-                        >
-                            소중한 날을 기록할 수 있도록
-                        </motion.p>
-                        <motion.p
-                            ref={ref4}
-                            initial="hidden"
-                            animate={animation4}
-                        >
-                            포토부스를 준비했습니다.
-                        </motion.p>
-                    </div>
                     <div className="my-[50px] flex h-[130px] flex-col items-center justify-evenly">
                         <motion.div
                             ref={ref5}
