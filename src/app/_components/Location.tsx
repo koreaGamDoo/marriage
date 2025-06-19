@@ -19,7 +19,7 @@ function Location() {
     const { ref: ref10, animation: animation10 } = useObserver(0.9);
 
     const copyAddress = () => {
-        navigator.clipboard.writeText("서울특별시 송파구 올림픽로 319");
+        navigator.clipboard.writeText("서울특별시 용산구 이태원로 22");
         toast.success("주소가 복사되었습니다", {
             duration: 2000,
             position: "top-center",
@@ -34,7 +34,7 @@ function Location() {
 
     return (
         <>
-            <div className="gsap-div flex h-[1500px] w-full flex-col items-center break-keep bg-[#ffffff] pt-10">
+            <div className="gsap-div flex h-[1300px] w-full flex-col items-center break-keep bg-[#ffffff] pt-10">
                 <motion.div
                     ref={ref1}
                     initial="hidden"
@@ -55,11 +55,11 @@ function Location() {
                     className="routeInfo flex flex-col gap-y-2 px-6 py-10 text-center"
                 >
                     <p className="gsap-opacity flex items-center justify-center gap-2 text-center text-[15px] sm:text-[16px]">
-                        잠실 더 컨벤션 (교통회관) 1F 그랜드볼룸
+                        국방컨벤션 1F 에메랄드 홀
                     </p>
                     <div className="flex items-center justify-center gap-1">
                         <p className="gsap-opacity text-[14px] opacity-50 sm:text-[16px]">
-                            서울특별시 송파구 올림픽로 319
+                            서울 용산구 이태원로 22
                         </p>
                         <Image
                             className="copyIcon cursor-pointer"
@@ -80,16 +80,16 @@ function Location() {
                 >
                     <Map
                         center={{
-                            lat: 37.51568329656702,
-                            lng: 127.10552336636238,
+                            lat: 37.534341,
+                            lng: 126.978467,
                         }}
                         style={{ width: "100%", height: "300px" }}
                         level={5}
                     >
                         <MapMarker
                             position={{
-                                lat: 37.51568329656702,
-                                lng: 127.10552336636238,
+                                lat: 37.534341,
+                                lng: 126.978467,
                             }}
                         />
                         <ZoomControl />
@@ -105,7 +105,7 @@ function Location() {
                     <div
                         className="appItem gsap-opacity flex flex-1 items-center justify-center gap-2 rounded-md bg-white px-2 py-3 text-center shadow-md"
                         onClick={() =>
-                            window.open("https://tmap.life/c728f463")
+                            window.open("https://tmap.life/d7f49dde")
                         }
                     >
                         <Image
@@ -119,7 +119,9 @@ function Location() {
                     </div>
                     <div
                         className="appItem gsap-opacity flex flex-1 items-center justify-center gap-2 rounded-md bg-white px-2 py-3 text-center shadow-md"
-                        onClick={() => window.open("https://kko.to/gUGkA903ax")}
+                        onClick={() =>
+                            window.open("https://kko.kakao.com/NKzS-nK7yR")
+                        }
                     >
                         <Image
                             className="kakao"
@@ -132,7 +134,7 @@ function Location() {
                     </div>
                     <div
                         className="appItem gsap-opacity flex flex-1 items-center justify-center gap-2 rounded-md bg-white px-2 py-3 text-center shadow-md"
-                        onClick={() => window.open("https://naver.me/GcWrqgGM")}
+                        onClick={() => window.open("https://naver.me/FXrG8T1K")}
                     >
                         <Image
                             className="naver"
@@ -179,15 +181,15 @@ function Location() {
                         <div className="gsap-opacity py-4">
                             <p>
                                 <strong className="text-[#AC3231]">
-                                    2호선
+                                    6호선
                                 </strong>{" "}
-                                : 잠실역 8번 출구 (도보 6분)
+                                : 삼각지역 13번 출구 (도보 5분)
                             </p>
                             <p>
                                 <strong className="text-[#AC3231]">
-                                    8호선
+                                    4호선
                                 </strong>{" "}
-                                : 잠실역 9번 출구 (도보 1분)
+                                : 삼각지역 1번 출구 (도보 7분)
                             </p>
                         </div>
                     </motion.div>
@@ -221,10 +223,9 @@ function Location() {
                         <div className="gsap-opacity py-4">
                             <strong className="text-[#AC3231]">일반버스</strong>
                             <p className="mb-2">
-                                16, 30-1, 30-3, 30-5, 32, 70, 100, 101, 116,
-                                119, 2002-2
+                                용산03, 421, 740, N72, N75, 110B국민대
                             </p>
-                            <strong className="text-[#AC3231]">간선버스</strong>
+                            {/* <strong className="text-[#AC3231]">간선버스</strong>
                             <p className="mb-2">
                                 301, 302, 303, 320, 333, 341, 351, 352, 360, N13
                             </p>
@@ -233,7 +234,7 @@ function Location() {
                                 2311, 2412, 2415, 3216, 3217, 3313, 3314, 3315,
                                 3317, 3318, 3319, 3411, 3412, 3413, 3414, 4318,
                                 4319
-                            </p>
+                            </p> */}
                         </div>
                     </motion.div>
 

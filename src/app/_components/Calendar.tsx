@@ -41,17 +41,20 @@ function Calendar() {
                         {" "}
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
                         1
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
                         2
                     </div>
-                    <div className="flex h-10 w-10 items-center justify-center">
-                        3
-                    </div>
                 </div>
                 <div className="calendar-count flex justify-evenly">
                     <div className="flex h-10 w-10 items-center justify-center text-red-500">
+                        3
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
                         4
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
@@ -66,15 +69,23 @@ function Calendar() {
                     <div className="flex h-10 w-10 items-center justify-center">
                         8
                     </div>
-                    <div className="flex h-10 w-10 items-center justify-center">
-                        9
-                    </div>
-                    <div className="flex h-10 w-10 items-center justify-center">
-                        10
+                    <div className="flex flex-col items-center">
+                        <div className="common-calandar-date relative flex h-10 w-10 items-center justify-center">
+                            <span className="dday relative z-10 text-white">
+                                9
+                            </span>
+                            <span className="absolute h-8 w-8 rounded-full bg-[#dea5a4]"></span>
+                        </div>
+                        <p className="calendar-time absolute pt-[35px] text-[10px] font-[600] sm:mr-[5px]">
+                            오후 4:20
+                        </p>
                     </div>
                 </div>
                 <div className="calendar-count flex justify-evenly">
                     <div className="flex h-10 w-10 items-center justify-center text-red-500">
+                        10
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
                         11
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
@@ -92,12 +103,12 @@ function Calendar() {
                     <div className="flex h-10 w-10 items-center justify-center">
                         16
                     </div>
-                    <div className="flex h-10 w-10 items-center justify-center">
-                        17
-                    </div>
                 </div>
                 <div className="calendar-count flex justify-evenly">
                     <div className="flex h-10 w-10 items-center justify-center text-red-500">
+                        17
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
                         18
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
@@ -115,12 +126,12 @@ function Calendar() {
                     <div className="flex h-10 w-10 items-center justify-center">
                         23
                     </div>
-                    <div className="flex h-10 w-10 items-center justify-center">
-                        24
-                    </div>
                 </div>
                 <div className="calendar-count flex justify-evenly">
                     <div className="flex h-10 w-10 items-center justify-center text-red-500">
+                        24
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
                         25
                     </div>
                     <div className="flex h-10 w-10 items-center justify-center">
@@ -138,16 +149,30 @@ function Calendar() {
                     <div className="flex h-10 w-10 items-center justify-center">
                         30
                     </div>
-                    <div className="common-calandar-date relative flex h-10 w-10 items-center justify-center">
-                        <span className="dday relative z-10 text-white">
-                            31
-                        </span>
-                        <span className="absolute h-8 w-8 rounded-full bg-[#dea5a4]"></span>
+                </div>
+                <div className="calendar-count flex justify-evenly">
+                    <div className="flex h-10 w-10 items-center justify-center text-red-500">
+                        31
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
+                    </div>
+                    <div className="flex h-10 w-10 items-center justify-center">
+                        {" "}
                     </div>
                 </div>
-                <p className="calendar-time float-right text-[10px] font-[600] sm:mr-[5px]">
-                    오후 4:20
-                </p>
             </div>
 
             <div

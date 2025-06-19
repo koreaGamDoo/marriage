@@ -55,15 +55,15 @@ function Greeting() {
                             animate={animation2}
                             className="other mb-[-0.8vh] text-[4vw] sm:text-[16px]"
                         >
-                            함께 있을 때 가장 나다운 모습이 되고,
+                            서로에 대한 믿음과 사랑으로
                         </motion.p>
                         <motion.p
                             ref={ref3}
                             initial="hidden"
                             animate={animation3}
-                            className="other mb-[-0.8vh] text-[4vw] sm:text-[16px]"
+                            className="other text-[4vw] sm:text-[16px]"
                         >
-                            함께 있을 때 미래를 꿈꾸게 하는 사람을 만나
+                            하루를 채워가며 하나의 삶이되었습니다.
                         </motion.p>
                         <motion.p
                             ref={ref4}
@@ -71,23 +71,31 @@ function Greeting() {
                             animate={animation4}
                             className="other mb-[-0.8vh] text-[4vw] sm:text-[16px]"
                         >
-                            함께 맞는 세 번째 봄, 결혼합니다.
+                            눈부신 날들을 함께걷기로 약속하고
                         </motion.p>
                         <motion.p
                             ref={ref5}
                             initial="hidden"
                             animate={animation5}
-                            className="other mb-[-0.8vh] text-[4vw] sm:text-[16px]"
+                            className="other text-[4vw] sm:text-[16px]"
                         >
-                            이제 서로의 손을 잡고 그 시작의 자리에
+                            설렘으로 새로운 시작을 준비하려고 합니다.
                         </motion.p>
                         <motion.p
                             ref={ref6}
                             initial="hidden"
                             animate={animation6}
+                            className="other mb-[-0.8vh] text-[4vw] sm:text-[16px]"
+                        >
+                            첫 걸음을 따뜻한 축복으로 함께해 주세요.
+                        </motion.p>
+                        <motion.p
+                            ref={ref7}
+                            initial="hidden"
+                            animate={animation6}
                             className="other text-[4vw] sm:text-[16px]"
                         >
-                            소중한 분들을 모시고 싶습니다.
+                            큰 기쁨으로 간직하겠습니다.
                         </motion.p>
                     </div>
                 </div>
@@ -104,30 +112,30 @@ function Greeting() {
                 <div className="man">
                     <strong>
                         <span className="member text-[4vw] sm:text-[20px]">
-                            박갑준&nbsp; · &nbsp;김홍숙{" "}
+                            최용석&nbsp; · &nbsp;박성희{" "}
                         </span>
                     </strong>
                     <span className="center text-[4vw] sm:text-[16px]">
-                        의 장남 &nbsp;
+                        의 차남 &nbsp; 신랑
                     </span>
                     <strong>
                         <span className="member text-[4vw] sm:text-[20px]">
-                            주한
+                            &nbsp;최주영
                         </span>
                     </strong>
                 </div>
                 <div className="girl">
                     <strong>
                         <span className="member text-[4vw] sm:text-[20px]">
-                            전기호&nbsp; · &nbsp;함은숙{" "}
+                            이광희&nbsp; · &nbsp;조희숙{" "}
                         </span>
                     </strong>
                     <span className="center text-[4vw] sm:text-[16px]">
-                        의 장녀 &nbsp;
+                        의 장녀 &nbsp; 신부
                     </span>
                     <strong>
                         <span className="member text-[4vw] sm:text-[20px]">
-                            경주
+                            &nbsp;이지원
                         </span>
                     </strong>
                 </div>

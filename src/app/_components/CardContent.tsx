@@ -18,8 +18,8 @@ function CardContent() {
     const [text1, setText1] = useState("");
     const [text2, setText2] = useState("");
     const [showCursor, setShowCursor] = useState(true);
-    const fullText1 = "행복한 시작의 순간,";
-    const fullText2 = "함께해 주시면 더 큰 기쁨이 되겠습니다.";
+    const fullText1 = "햇살이 반짝이는 여름,";
+    const fullText2 = "두 사람의 마음을 모아 하나가 되려합니다.";
 
     useEffect(() => {
         setTimeout(() => {
@@ -112,7 +112,6 @@ function CardContent() {
                 <Header />
                 <Greeting />
                 <Ceremony />
-                <Introduce />
                 <Pictures />
                 <Location />
                 <Account />

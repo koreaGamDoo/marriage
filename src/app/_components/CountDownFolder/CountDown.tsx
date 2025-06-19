@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 
 const CountDown = () => {
-    const setDate = useMemo(() => new Date("2025-05-31T16:20:00+0900"), []);
+    const setDate = useMemo(() => new Date("2025-08-09T14:30:00+0900"), []);
     const [day, setDay] = useState<number>(0);
     const [hour, setHour] = useState<number>(0);
     const [minutes, setMinutes] = useState<number>(0);
@@ -40,7 +40,7 @@ const CountDown = () => {
     return (
         <div className="d-day-contents flex w-full flex-col">
             <div className="d-day-title mb-5 flex justify-center">
-                <p>주한</p>{" "}
+                <p>주영</p>{" "}
                 <Image
                     src="/images/heart.png"
                     width={20}
@@ -48,7 +48,7 @@ const CountDown = () => {
                     alt={"Heart"}
                 />
                 <p>
-                    {new Date() > setDate ? "경주 결혼한지" : "경주 결혼식까지"}
+                    {new Date() > setDate ? "지원 결혼한지" : "지원 결혼식까지"}
                 </p>
             </div>
             <div className="mx-auto flex h-[100px] w-[100%] flex-row items-center justify-around sm:w-[90%]">

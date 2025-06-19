@@ -34,7 +34,7 @@ function Introduce() {
                             <div className="mb-2.5 h-[130px] w-[130px] overflow-hidden rounded-full bg-[#bdbdbd]">
                                 <Image
                                     className="profile object-cover object-[center_-10px]"
-                                    src={"/images/introduce_joohan.jpg"}
+                                    src={"/images/introduce_groom.jpg"}
                                     width={130}
                                     height={130}
                                     alt={"Joohan"}
@@ -77,7 +77,7 @@ function Introduce() {
                             <div className="mb-2.5 h-[130px] w-[130px] overflow-hidden rounded-full bg-[#bdbdbd]">
                                 <Image
                                     className="profile object-cover"
-                                    src={"/images/introduce_gyeongju.jpg"}
+                                    src={"/images/introduce_bride.jpg"}
                                     width={130}
                                     height={130}
                                     alt={"Gyeongju"}

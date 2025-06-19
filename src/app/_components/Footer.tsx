@@ -30,23 +30,23 @@ function Footer() {
             Kakao.Share.sendDefault({
                 objectType: "feed",
                 content: {
-                    title: "5월 31일 (토) 오후 16시 20분",
-                    description: "잠실 더컨벤션 / 1F 그랜드볼룸",
+                    title: "8월 9일 (토) 오후 14시 30분",
+                    description: "국방컨벤션 / 1F 에메랄드 홀",
                     imageUrl:
                         "https://cdn.pixabay.com/photo/2017/08/06/20/11/wedding-2595862_1280.jpg",
                     imageWidth: 1200,
                     imageHeight: 630,
                     link: {
-                        mobileWebUrl: "https://gjh-marriage.vercel.app/",
-                        webUrl: "https://gjh-marriage.vercel.app/",
+                        mobileWebUrl: "https://marriage-gules.vercel.app/",
+                        webUrl: "https://marriage-gules.vercel.app/",
                     },
                 },
                 buttons: [
                     {
                         title: "청첩장 보기",
                         link: {
-                            mobileWebUrl: "https://gjh-marriage.vercel.app/",
-                            webUrl: "https://gjh-marriage.vercel.app/",
+                            mobileWebUrl: "https://marriage-gules.vercel.app/",
+                            webUrl: "https://marriage-gules.vercel.app/",
                         },
                     },
                 ],
@@ -55,7 +55,7 @@ function Footer() {
     };
 
     const copyAddress = () => {
-        navigator.clipboard.writeText("https://gjh-marriage.vercel.app/");
+        navigator.clipboard.writeText("https://marriage-gules.vercel.app/");
         toast.success("주소가 복사되었습니다", {
             duration: 2000,
             position: "top-center",

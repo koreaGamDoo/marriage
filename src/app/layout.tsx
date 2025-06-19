@@ -6,8 +6,8 @@ import { ThemeProvider } from "next-themes";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-    title: "5월 31일 (토) 오후 16시 20분",
-    description: "잠실 더컨벤션 / 1F 그랜드볼룸",
+    title: "8월 9일 (토) 오후 14시 30분",
+    description: "국방컨벤션 / 1F 에메랄드 홀",
     icons: {
         icon: "/images/marriage.png",
     },

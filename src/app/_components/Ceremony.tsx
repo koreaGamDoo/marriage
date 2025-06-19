@@ -46,8 +46,8 @@ function Ceremony() {
                         animate={animation3}
                         className="flex flex-col gap-y-2 text-center text-[13px] sm:text-[15px]"
                     >
-                        <p>2025년 5월 31일 토요일 | 오후 4시 20분</p>
-                        <p>Saturday, May 31, 2025 | PM 4:20</p>
+                        <p>2025년 8월 9일 토요일 | 오후 2시 30분</p>
+                        <p>Saturday, August 9, 2025 | PM 2:30</p>
                     </motion.div>
                 </div>
 
@@ -60,7 +60,7 @@ function Ceremony() {
                         >
                             <div className="mt-[30px] flex items-center justify-center gap-4">
                                 <div className="h-[1px] w-1/2 bg-gray-300"></div>
-                                <span className="text-2xl">5</span>
+                                <span className="text-2xl">8</span>
                                 <div className="h-[1px] w-1/2 bg-gray-300"></div>
                             </div>
                         </motion.div>
