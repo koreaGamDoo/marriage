@@ -122,7 +122,7 @@ function Footer() {
                     </div>
                 </div>
                 <p className="my-[5px] text-center text-[10px] text-[#a7a6a6]">
-                    ⓒ copyright Joohan Park
+                    ⓒ copyright JooYoung Choi
                 </p>
             </div>
         </>

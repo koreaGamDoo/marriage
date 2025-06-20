@@ -117,6 +117,7 @@ function CardContent() {
                 <Account />
                 <Board />
                 <Participant />
+                <Footer />
             </div>
         </>
     );
