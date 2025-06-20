@@ -72,7 +72,7 @@ function Board() {
                         {
                             no: "no",
                             content: "자유롭게 결혼 축하해주세요!",
-                            name: "경주한 커플",
+                            name: "최주영❤️이지원 커플",
                         },
                     ]);
             });

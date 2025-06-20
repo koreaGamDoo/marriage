@@ -9,11 +9,11 @@ import { toast } from "react-hot-toast";
 export const accountList = [
     {
         name: "신랑",
-        account: "076902-04-192261",
+        account: "352-0903-9414-43",
     },
     {
         name: "신랑아버지",
-        account: "060-340642-12-001",
+        account: "110-280-218845",
     },
     {
         name: "신랑어머니",
@@ -21,15 +21,15 @@ export const accountList = [
     },
     {
         name: "신부",
-        account: "1002-148-418426",
+        account: "352-1995-0702-83",
     },
     {
         name: "신부아버지",
-        account: "102-08-213637",
+        account: "302-3633-0855-81",
     },
     {
         name: "신부어머니",
-        account: "119-07-221472",
+        account: "601153-56-018596",
     },
 ];
 
@@ -115,13 +115,13 @@ function Account() {
                                 <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
                                     <div className="flex-start flex flex-col">
                                         <span className="mb-3 font-bold">
-                                            박주한
+                                            최주영
                                         </span>
                                         <span className="text-[14px]">
-                                            076902-04-192261
+                                            352-0903-9414-43
                                         </span>
                                         <span className="text-[14px]">
-                                            국민은행 박주한
+                                            농협은행 최주영
                                         </span>
                                     </div>
 
@@ -143,35 +143,18 @@ function Account() {
                                                 height={15}
                                             />
                                         </div>
-                                        <div
-                                            className="board-button flex h-[30px] w-[60px] cursor-pointer items-center justify-between rounded-md bg-[#FFE000] px-1 py-1 shadow-md"
-                                            onClick={() =>
-                                                window.open(
-                                                    "https://link.kakaopay.com/_/KwYYlZm",
-                                                    "_blank",
-                                                )
-                                            }
-                                        >
-                                            <a className="text-bold text-center text-sm text-black hover:opacity-90"></a>
-                                            <Image
-                                                src={"/images/kakaopay.png"}
-                                                alt={"kakaopay"}
-                                                width={80}
-                                                height={80}
-                                            />
-                                        </div>
                                     </div>
                                 </div>
                                 <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
                                     <div className="flex-start flex flex-col">
                                         <span className="mb-3 font-bold">
-                                            박갑준
+                                            최용석
                                         </span>
                                         <span className="text-[13px] sm:text-[14px]">
-                                            060-340642-12-001
+                                            110-280-218845
                                         </span>
                                         <span className="text-[14px]">
-                                            우리은행 박갑준
+                                            신한은행 최용석
                                         </span>
                                     </div>
 
@@ -195,39 +178,6 @@ function Account() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
-                                    <div className="flex-start flex flex-col">
-                                        <span className="mb-3 font-bold">
-                                            김홍숙
-                                        </span>
-                                        <span className="text-[14px]">
-                                            110-295-035318
-                                        </span>
-                                        <span className="text-[14px]">
-                                            신한은행 김홍숙
-                                        </span>
-                                    </div>
-
-                                    <div className="flex flex-col items-center justify-center gap-1">
-                                        <div
-                                            className="board-button flex h-[30px] w-[60px] cursor-pointer items-center justify-evenly rounded-md bg-[#969595] px-1 py-1 shadow-md"
-                                            onClick={() => copyAddress(2)}
-                                        >
-                                            <a className="text-bold text-[11px] text-white hover:opacity-90 sm:text-sm">
-                                                복사
-                                            </a>
-                                            <Image
-                                                className="copyIcon cursor-pointer"
-                                                src={
-                                                    "/images/copyIcon_white.png"
-                                                }
-                                                alt={"copyIcon"}
-                                                width={15}
-                                                height={15}
-                                            />
-                                        </div>
-                                    </div>
-                                </div> */}
                             </div>
                         </AccordionItem>
                         <AccordionItem
@@ -240,13 +190,13 @@ function Account() {
                                 <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
                                     <div className="flex-start flex flex-col">
                                         <span className="mb-3 font-bold">
-                                            전경주
+                                            이지원
                                         </span>
                                         <span className="text-[14px]">
-                                            1002-148-418426
+                                            352-1995-0702-83
                                         </span>
                                         <span className="text-[14px]">
-                                            우리은행 전경주
+                                            농협은행 이지원
                                         </span>
                                     </div>
 
@@ -268,35 +218,18 @@ function Account() {
                                                 height={15}
                                             />
                                         </div>
-                                        <div
-                                            className="board-button flex h-[30px] w-[60px] cursor-pointer items-center justify-between rounded-md bg-[#FFE000] px-1 py-1 shadow-md"
-                                            onClick={() =>
-                                                window.open(
-                                                    "https://link.kakaopay.com/_/isX1aG9",
-                                                    "_blank",
-                                                )
-                                            }
-                                        >
-                                            <a className="text-bold text-center text-sm text-black hover:opacity-90"></a>
-                                            <Image
-                                                src={"/images/kakaopay.png"}
-                                                alt={"kakaopay"}
-                                                width={80}
-                                                height={80}
-                                            />
-                                        </div>
                                     </div>
                                 </div>
                                 <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
                                     <div className="flex-start flex flex-col">
                                         <span className="mb-3 font-bold">
-                                            전기호
+                                            이광희
                                         </span>
                                         <span className="text-[14px] sm:text-[15px]">
-                                            102-08-213637
+                                            302 3633 0855 81
                                         </span>
                                         <span className="text-[14px]">
-                                            우리은행 전기호
+                                            농협은행 이광희
                                         </span>
                                     </div>
 
@@ -323,13 +256,13 @@ function Account() {
                                 <div className="align-center flex flex-row justify-between rounded-md bg-[#EBEBEB] p-3">
                                     <div className="flex-start flex flex-col">
                                         <span className="mb-3 font-bold">
-                                            함은숙
+                                            조희숙
                                         </span>
                                         <span className="text-[14px]">
-                                            119-07-221472
+                                            601153-56-018596
                                         </span>
                                         <span className="text-[14px]">
-                                            우리은행 함은숙
+                                            농협은행 조희숙
                                         </span>
                                     </div>
 
